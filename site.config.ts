@@ -52,11 +52,11 @@ export default siteConfig({
   // navigationStyle: 'custom',
   // navigationLinks: [
   //   {
-  //     title: '关于我',
+  //     title: 'about',
   //     pageId: '6d94b8d6edd741ea9559c64ba362fdb3'
   //   },
   //   {
-  //     title: '找俺玩',
+  //     title: 'contact',
   //     pageId: 'dd86807a32054a1f8fefffdb8961bbf5'
   //   }
   // ]
