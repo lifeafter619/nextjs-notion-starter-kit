@@ -52,12 +52,12 @@ export default siteConfig({
   // navigationStyle: 'custom',
   // navigationLinks: [
   //   {
-  //     title: 'About',
-  //     pageId: 'f1199d37579b41cbabfc0b5174f4256a'
+  //     title: '关于我',
+  //     pageId: '6d94b8d6edd741ea9559c64ba362fdb3'
   //   },
   //   {
-  //     title: 'Contact',
-  //     pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
+  //     title: '找俺玩',
+  //     pageId: 'dd86807a32054a1f8fefffdb8961bbf5'
   //   }
   // ]
 })
