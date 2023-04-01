@@ -2,22 +2,22 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: '7877d045c1654733ad9cb22dbd9ef14a',
+  rootNotionPageId: 'b76ac8cc188547928dee308165646147',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: '619的主页',
-  domain: 'www.66619.eu.org',
+  name: 'Blind-helper项目文档',
+  domain: 'blind-helper.66619.eu.org',
   author: '619',
 
   // open graph metadata (optional)
   description: 'Just a cloud.',
 
   // social usernames (optional)
-  github: 'lifeafter619',
+  github: 'lifeafter619/blind-helper',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
