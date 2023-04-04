@@ -11,10 +11,10 @@ export default siteConfig({
   // basic site info (required)
   name: 'Blind-helper项目文档',
   domain: 'blind-helper.66619.eu.org',
-  author: '619',
+  author: '冯浩宇',
 
   // open graph metadata (optional)
-  description: 'Just a cloud.',
+  description: '基于标签识别和物联网编写的的盲人购物智能辅助装置',
 
   // social usernames (optional)
   github: 'lifeafter619/blind-helper',
