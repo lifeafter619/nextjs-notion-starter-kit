@@ -2,7 +2,7 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: 'b76ac8cc188547928dee308165646147',
+  rootNotionPageId: 'd4ad1e7146ab4b669affbcd8b52979f8',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
@@ -11,7 +11,7 @@ export default siteConfig({
   // basic site info (required)
   name: 'Blind-helper项目文档',
   domain: 'blind-helper.66619.eu.org',
-  author: '冯浩宇',
+  author: '@619',
 
   // open graph metadata (optional)
   description: '基于标签识别和物联网编写的的盲人购物智能辅助装置',
