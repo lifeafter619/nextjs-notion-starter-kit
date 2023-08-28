@@ -2,15 +2,15 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: 'd2af648957dc413fba5c53c12942b27c',
+  rootNotionPageId: '9d8943d2f3674d029364b16b4b4a8c24',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: '619的主页',
-  domain: 'www.66619.eu.org',
+  name: '619の项目',
+  domain: '619-project.eu.org',
   author: '619',
 
   // open graph metadata (optional)
