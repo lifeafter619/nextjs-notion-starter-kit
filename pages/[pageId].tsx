@@ -17,7 +17,12 @@ export const getStaticProps: GetStaticProps<PageProps, Params> = async (
     return { props, revalidate: 10 }
   } catch (err) {
     console.error('page error', domain, rawPageId, err)
-    return { notFound: true, revalidate: 10 }
+    if (context.revalidateReason === 'build') {
+      return { notFound: true, revalidate: 10 }
+    }
+
+    // preserve previously generated pages during ISR errors
+    throw err
   }
 }
 
