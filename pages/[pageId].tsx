@@ -17,10 +17,7 @@ export const getStaticProps: GetStaticProps<PageProps, Params> = async (
     return { props, revalidate: 10 }
   } catch (err) {
     console.error('page error', domain, rawPageId, err)
-
-    // we don't want to publish the error version of this page, so
-    // let next.js know explicitly that incremental SSG failed
-    throw err
+    return { notFound: true, revalidate: 10 }
   }
 }
 
@@ -32,7 +29,16 @@ export async function getStaticPaths() {
     }
   }
 
-  const siteMap = await getSiteMap()
+  let siteMap
+  try {
+    siteMap = await getSiteMap()
+  } catch (err) {
+    console.error('site map error', domain, err)
+    return {
+      paths: [],
+      fallback: true
+    }
+  }
 
   // Combine sitemap paths with URL overrides (e.g., /articles, /notes)
   // URL overrides might not be in the sitemap if not directly linked from root
